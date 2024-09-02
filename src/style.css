@@ -113,6 +113,7 @@ header {
     color: #495057;
 }
 
+/* Ancho Contenedores derecho e izquierdo */
 @media (max-width: 724px) {
     body {
         font-size: 18px;
@@ -121,12 +122,12 @@ header {
     #container {
         flex-direction: column;
         margin: 2em;
+        gap: 1em;
     }
 
     #container-right {
-        height: 6em;
         width: 14em;
-        height: 10em;
+        height: 15em;
     }
 
     #container-left {
@@ -135,16 +136,16 @@ header {
     }
 }
 
-
+/* Alto Contenedores derecho e izquierdo */
 @media (max-height: 559px) {
     body {
         font-size: 18px;
     }
 
     #container-right {
-        height: 6em;
         width: 14em;
-        height: 10em;
+        height: 50em;
+        overflow: auto;
     }
 
     #container-left {
