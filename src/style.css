@@ -1,37 +1,154 @@
+body {
+    background-color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    height: 5em;
+}
+
+#inputText {
+    border: none;
+    background-color: transparent;
+    font-size: 1.5em;
+    color: darkblue;
+    overflow: auto;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#inputText:focus {
+    border-color: transparent;
+    outline: none;
+    font-size: 1.5em;
+    color: darkblue;
+}
+
+#outputText {
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    overflow-wrap: break-word;
+}
+
+.msjNotFoundp1 {
+    font-weight: 400;
+    font-size: 2em;
+}
+
+.msjNotFoundp2 {
+    font-size: 1em;
+}
+
+.btns {
+    justify-content: inline-block;
+    border: 2px;
+    border-color: rgb(23, 38, 82);
+    border-radius: 15px;
+    width: 100px;
+    height: 40px;
+}
+
 #btnEncrypt {
-    background-color: rgb(19, 35, 78);
-    border-color: rgb(16, 24, 44);
+    background-color: rgb(23, 38, 82);
     color: white;
 }
 
 #btnDecrypt {
     background-color: lightgrey;
-    border-color: rgb(16, 24, 44);
 }
 
-.btns {
-    border: 1px;
-    border-radius: 10px;
-    width: wrap;
-    height: auto;
+#btnCopy {
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
 
-#containers {
-    height: 300px;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 10rem;
+#msjCopiado {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    box-sizing: border-box;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    gap: 3em;
+    width: 80%;
 }
 
-#container-left {}
+#container-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em;
+    padding: 1em;
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+}
 
 #container-right {
-    display: center;
-    shadow: 2px grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    margin: 2em;
+    padding: 1em;
+    height: 400px;
+    width: 400px;
 }
 
-#container-right-box {
-    margin: 2rem;
-    justify-content: center;
+.fa-exclamation-circle,
+#soloLetras {
+    color: #495057;
+}
+
+@media (max-width: 724px) {
+    body {
+        font-size: 18px;
+    }
+
+    #container {
+        flex-direction: column;
+        margin: 2em;
+    }
+
+    #container-right {
+        height: 6em;
+        width: 14em;
+        height: 10em;
+    }
+
+    #container-left {
+        width: 14em;
+        height: 10em;
+    }
+}
+
+
+@media (max-height: 559px) {
+    body {
+        font-size: 18px;
+    }
+
+    #container-right {
+        height: 6em;
+        width: 14em;
+        height: 10em;
+    }
+
+    #container-left {
+        width: 14em;
+        height: 10em;
+    }
 }
