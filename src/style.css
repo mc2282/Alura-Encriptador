@@ -113,7 +113,7 @@ header {
     color: #495057;
 }
 
-/* Ancho Contenedores derecho e izquierdo */
+/* Ancho */
 @media (max-width: 724px) {
     body {
         font-size: 18px;
@@ -136,7 +136,7 @@ header {
     }
 }
 
-/* Alto Contenedores derecho e izquierdo */
+/* Alto */
 @media (max-height: 559px) {
     body {
         font-size: 18px;

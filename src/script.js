@@ -135,4 +135,5 @@ btnEncrypt.addEventListener('click', () => encrypt());
 btnDecrypt.addEventListener('click', () => decrypt());
 btnCopy.addEventListener('click', () => copyText());
 
+hideOutputAndButton();
 createNotFoundHTML();
